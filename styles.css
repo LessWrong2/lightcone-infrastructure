@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
+
+body {
+    font-family: "Cardo", serif;
+    width: 1100px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666666;
+}
+
+p {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 0.8em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.logo {
+    display:flex;
+    /* align-content: center; */
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.logo-image {
+    transform: rotate(90deg);
+    width: 30px
+}
+.CTA-button button {
+    background: none;
+    border: 0px;
+    font-style: italic
+}
+.banner-section {
+    display: flex;
+    gap: 50px
+}
+.left-section {
+    width: 60%;
+    padding-top: 50px
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px
+}
+.right-section {
+    width: 40%;
+}
+.section-header {
+    font-family: Cardo;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(102, 102, 102, 0.5);
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(102, 102, 102, 0.7);
+}
+
+.project {
+    margin-bottom: 32px;
+}
+
+section {
+    margin-bottom: 100px
+}
+
+.content-area { 
+    margin-bottom: 10px
+}
+
+.job {
+    display: block; 
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.jobs {
+    display: flex;
+    gap: 30px;
+}
+
+h4 {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(102, 102, 102, 0.7);
+    margin-bottom: 10px;
+}
+
+.job button {
+    border: 0px;
+    background: none;
+    color: #ebba57;
+    padding: 0px;
+}
