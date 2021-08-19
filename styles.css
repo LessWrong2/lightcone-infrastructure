@@ -10,6 +10,15 @@ body {
     color: #666666;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
 p {
     font-family: "Libre Baskerville", serif;
     font-size: 16px;
@@ -39,7 +48,8 @@ p {
 .CTA-button button {
     background: none;
     border: 0px;
-    font-style: italic
+    opacity: 50%;
+    font-style: italic;
 }
 .banner-section {
     display: flex;
@@ -87,6 +97,7 @@ h3 {
 
 .project {
     margin-bottom: 32px;
+    display: block;
 }
 
 section {
@@ -98,11 +109,12 @@ section {
 }
 
 .job {
-    display: block; 
+    display: block;
     padding: 16px;
     background: #FFFFFF;
     box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    width: 1000px;
 }
 
 .jobs {
@@ -116,8 +128,9 @@ h4 {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    color: rgba(102, 102, 102, 0.7);
-    margin-bottom: 10px;
+    color: #ebba57;
+    margin-bottom: 15px;
+    fill: #ebba57;
 }
 
 .job button {
@@ -125,4 +138,14 @@ h4 {
     background: none;
     color: #ebba57;
     padding: 0px;
+}
+
+.job svg, .job img {
+    height: 1.5em;
+    margin-right: 8px
+}
+
+.job h4 {
+    display: flex;
+    align-items: center;
 }
