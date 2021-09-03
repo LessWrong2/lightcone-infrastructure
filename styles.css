@@ -3,7 +3,7 @@
 
 body {
     font-family: "Cardo", serif;
-    width: 1100px;
+    max-width: 1100px;
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +19,10 @@ a:hover {
     opacity: 50%;
 }
 
+.linkstyle {
+    color: #ebba57
+}
+
 p {
     font-family: "Libre Baskerville", serif;
     font-size: 16px;
@@ -32,6 +36,8 @@ p {
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
+    gap: 40px;
+    /* flex-wrap: wrap; */
 }
 .logo {
     display:flex;
@@ -53,18 +59,33 @@ p {
 }
 .banner-section {
     display: flex;
-    gap: 50px
+    row-gap: 12px;
+    column-gap: 50px;
+    /* flex-flow: row wrap; */
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    /* align-content: center; */
+    /* justify-items: center; */
+    justify-content: center;
 }
 .left-section {
-    width: 60%;
-    padding-top: 50px
+    /* width: 60%; */
+    /* padding-top: 50px; */
+    flex: 3;
+    min-width: 300px;
 }
 h2 {
     font-size: 35px;
     margin-bottom: 20px
 }
 .right-section {
-    width: 40%;
+    /* width: 40%; */
+    /* max-width: 300px; */
+    justify-self: center;
+    align-self: center;
+    flex: 2;
+    min-width: 300px;
+    max-width: 400px;
 }
 .section-header {
     font-family: Cardo;
@@ -100,12 +121,10 @@ h3 {
     display: block;
 }
 
-section {
-    margin-bottom: 100px
-}
-
-.content-area { 
-    margin-bottom: 10px
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .job {
@@ -114,12 +133,15 @@ section {
     background: #FFFFFF;
     box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    width: 1000px;
+    /* max-width: 300px; */
+    min-width: 300px;
+    flex: 1;
 }
 
 .jobs {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 h4 {
