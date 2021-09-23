@@ -55,12 +55,24 @@ p a {
     transform: rotate(90deg);
     width: 30px
 }
-.CTA-button button {
+.CTA-button-navbar button {
     background: none;
     border: 0px;
     opacity: 50%;
     font-style: italic;
 }
+
+.CTA-button-center button {
+    background: hsl(41deg 88% 48%);
+    border: 0px solid;
+    opacity: 50%;
+    /* font-style: italic; */
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 16px;
+    color: white;
+}
+
 .banner-section {
     display: flex;
     row-gap: 12px;
@@ -82,6 +94,7 @@ p a {
 h1 {
     font-size: 35px;
     margin-bottom: 20px;
+    line-height: 1.3;
 }
 .right-section {
     /* width: 40%; */
