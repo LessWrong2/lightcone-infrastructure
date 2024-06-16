@@ -1,0 +1,60 @@
+.title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title-section p {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+.title-section p:first-child {
+  font-size: 24px;
+  /* font-weight: bold; */
+}
+.title-section p:last-child {
+  font-size: 28px;
+  font-style: italic;
+}
+.content-area {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-area p {
+  line-height: 1.6;
+}
+
+.content-area h1 {
+  margin-top: 10px;
+}
+
+.content-area h2 {
+  margin-top: 40px;
+  text-transform: unset;
+  letter-spacing: unset;
+  margin-bottom: 10px
+}
+
+.section-separator-cone {
+  text-align: center;
+  color:#cc0000; 
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 28px;
+}
+
+.chapter-link {
+  font-style: italic;
+  color:#cc0000; 
+  font-size: 20px;
+}
+
+.footnote {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
