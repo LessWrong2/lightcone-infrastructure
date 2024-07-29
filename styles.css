@@ -237,5 +237,6 @@ h4 {
 }
 .footer {
     position: absolute;
+    padding: 16px 0;
     bottom: 0;
 }
