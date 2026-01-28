@@ -7,7 +7,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/tlf2euo.css">
     <link rel="shortcut icon" type="image/jpg" href="https://res.cloudinary.com/lesswrong-2-0/image/upload/a_90/v1629334277/Lightcone-02_stkgik.svg"/>
-    <title>Donate - Lightcone Infrastructure</title>
+    <title>Principles - Lightcone Infrastructure</title>
+    <style>
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fafafa;
+        z-index: 100;
+        max-width: none;
+        padding: 20px 30px;
+      }
+      body {
+        overflow: hidden;
+        padding-top: 0;
+      }
+      .principles-embed {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        border: none;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
@@ -20,26 +44,17 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="projects.html" class="nav-link">Projects</a>
-        <a href="principles.html" class="nav-link">Principles</a>
+        <a href="principles.html" class="nav-link nav-link--active">Principles</a>
         <a href="team.html" class="nav-link">Team</a>
         <a href="jobs.html" class="nav-link">Jobs</a>
-        <a href="donate.html" class="nav-link nav-link--active">Donate</a>
+        <a href="donate.html" class="nav-link">Donate</a>
       </nav>
     </div>
-    <div class="content-area">
-      <section style="text-align: center; padding: 60px 20px;">
-        <h2>Donate</h2>
-        <p style="margin-top: 20px;">Donate page coming soon.</p>
-        <p style="margin-top: 30px;">
-          <a href="https://www.every.org/lightcone-infrastructure?suggestedAmounts=50%2C100%2C1000%2C2000%2C10000&theme_color=7faf83&designation=Lightcone+Infrastructure&utm_campaign=donate-link#/donate" style="color: #ebba57;">
-            Donate via Every.org
-          </a>
-        </p>
-      </section>
-      <hr>
-      <section>
-        Lightcone Infrastructure is a registered 501(c)3. EIN 92-0861538.
-      </section>
-    </div>
+
+    <iframe
+      src="https://www.lesswrong.com/s/cegJvyiP2dBkhDh2K"
+      class="principles-embed"
+      title="Lightcone Principles on LessWrong">
+    </iframe>
   </body>
 </html>

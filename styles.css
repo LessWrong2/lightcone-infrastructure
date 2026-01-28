@@ -160,6 +160,63 @@ h3 {
     display: block;
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s ease;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.projects--centered {
+    text-align: center;
+}
+
+.projects--centered .project-card {
+    text-align: left;
+}
+
+.project-card:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.project-card svg {
+    width: 100%;
+    height: 150px;
+    padding: 24px;
+    box-sizing: border-box;
+    fill: #ebba57;
+    background: #faf8f5;
+}
+
+.project-card-content {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+
 .content-area {
     display: flex;
     flex-direction: column;
@@ -178,12 +235,36 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    transition: box-shadow 0.2s ease;
+}
+
+.job:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.18);
 }
 
 .jobs {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+}
+
+.jobs--stacked {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.jobs--stacked .job {
+    width: 100%;
+}
+
+.work-with-us--centered {
+    text-align: center;
+}
+
+.work-with-us--centered .jobs--stacked {
+    text-align: left;
 }
 
 h4 {
@@ -240,4 +321,60 @@ h4 {
     position: absolute;
     padding: 16px 0;
     bottom: 0;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 2em;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-style: italic;
+  color: #666666;
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link--active {
+  opacity: 1;
+  border-bottom-color: #ebba57;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.breadcrumbs a {
+  color: #ebba57;
+}
+
+.breadcrumb-sep {
+  margin: 0 0.6em;
+  opacity: 0.4;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 16px;
+    gap: 1.5em;
+    flex: none;
+  }
 }
