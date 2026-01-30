@@ -378,3 +378,111 @@ h4 {
     flex: none;
   }
 }
+
+/* Single-page section spacing */
+.content-area section {
+  scroll-margin-top: 20px;
+  padding-top: 20px;
+}
+
+.principles-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Zig-zag project layout */
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h2 {
+  text-align: center;
+}
+
+.project-row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.project-row--reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-image--placeholder {
+  background: #f5f5f5;
+  min-height: 250px;
+  border-radius: 8px;
+}
+
+.project-image--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.project-image--grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-image--grid img:first-child {
+  object-position: left center;
+}
+
+.project-row .project-text {
+  flex: 1;
+}
+
+.project-row .project-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.project-row .project-text p {
+  margin-bottom: 16px;
+  color: #666;
+  font-family: "et-book", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.project-row .project-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-row .project-text .footnote {
+  font-size: 14px;
+  color: #888;
+  margin-top: 12px;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 750px) {
+  .project-row,
+  .project-row--reverse {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}
