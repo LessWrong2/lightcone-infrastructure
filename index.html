@@ -16,22 +16,14 @@
     </style>
   </head>
   <body>
-    <div class="navbar">
+    <header class="site-header">
       <a href="#home" class="logo">
         <img class="logo-image"
           src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1629334277/Lightcone-02_stkgik.svg"
         />
         <div>Lightcone Infrastructure</div>
       </a>
-      <nav class="nav-links">
-        <a href="#home" class="nav-link nav-link--active">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#principles" class="nav-link">Principles</a>
-        <a href="#team" class="nav-link">Team</a>
-        <a href="#jobs" class="nav-link">Jobs</a>
-        <a href="#donate" class="nav-link">Donate</a>
-      </nav>
-    </div>
+    </header>
     <div class="content-area">
       <!-- About Section -->
       <section id="home" class="banner-section">
@@ -51,18 +43,14 @@
         </div>
       </section>
 
-      <hr>
-
       <!-- Projects Section -->
       <section id="projects" class="projects-section">
         <h2>Projects</h2>
 
         <!-- LessWrong - Image Left, Text Right -->
         <div class="project-row">
-          <div class="project-image">
-            <a href="https://www.lesswrong.com/about">
-              <img src="images/p22_s10white.jpeg" alt="Harold Fisk Mississippi River Meander Map">
-            </a>
+          <div class="project-image project-image--fade">
+            <img src="images/lw-orbs.png" alt="LessWrong">
           </div>
           <div class="project-text">
             <h3><a href="https://www.lesswrong.com/about">LessWrong</a></h3>
@@ -81,10 +69,8 @@
 
         <!-- Lighthaven - Text Left, Image Right -->
         <div class="project-row project-row--reverse">
-          <div class="project-image">
-            <a href="https://lighthaven.space">
-              <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1744861859/Lighthaven_New_pbyotj.png" alt="Lighthaven Campus">
-            </a>
+          <div class="project-image project-image--fade">
+            <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1744861859/Lighthaven_New_pbyotj.png" alt="Lighthaven Campus">
           </div>
           <div class="project-text">
             <h3><a href="https://lighthaven.space">Lighthaven</a></h3>
@@ -99,13 +85,16 @@
 
         <!-- AI 2027, MIRI Book Launch, and other design contracting - Image Left, Text Right -->
         <div class="project-row">
-          <div class="project-image">
-            <img src="images/ai2027.png" alt="AI 2027 visualization">
+          <div class="project-image project-image--fade">
+            <img src="images/ai2027-new.png" alt="AI 2027 visualization">
           </div>
           <div class="project-text">
-            <h3>AI 2027, MIRI Book Launch, and other design contracting</h3>
+            <h3>External Design and Communication Work</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Duis mollis est non commodo luctus.
+              In 2024 we began providing website design, branding, and marketing for high-stakes public research communication. Our work on AI 2027 helped the piece reach 9M+ direct views and an estimated 100M through secondary coverage. It was read by the US vice president and covered in hundreds of news stories across a dozen languages. We built the website and marketing materials for MIRI's If Anyone Builds It, Everyone Dies, which became a NYT bestseller. We built the Deciding to Win site in one week (including three all-nighters), and the report was covered by essentially every major US publication.
+            </p>
+            <p>
+              This work matters because presentation dramatically affects reach. We seem to be unusually well-positioned to do it, combining design skill, technical ability, and understanding of the ideas. Multiple teams have approached us since AI 2027 asking for similar help. We're excited to continue offering this to projects that aim to help the public reason well about critical decision points for humanity's future.
             </p>
           </div>
         </div>
@@ -128,7 +117,20 @@
 
       </section>
 
-      <hr>
+      <!-- Team Section -->
+      <section id="team" class="team-section">
+        <h2>Team</h2>
+        <ul class="team-list">
+          <li>Oliver Habryka</li>
+          <li>Ruby Bloom</li>
+          <li>Jacob Lagerros</li>
+          <li>Ben Pace</li>
+          <li>Raymond Arnold</li>
+          <li>Rafe Kennedy</li>
+          <li>Robert Mushkatblat</li>
+          <li>Ronny Fernandez</li>
+        </ul>
+      </section>
 
       <!-- Principles Section -->
       <section id="principles" class="principles-section">
@@ -141,63 +143,16 @@
         </p>
       </section>
 
-      <hr>
-
-      <!-- Team Section -->
-      <section id="team" class="team">
-        <h2>Team</h2>
-        <div class="team-members">
-          <div class="member">
-            <h3>Oliver Habryka</h3>
-          </div>
-          <div class="member">
-            <h3>Ruby Bloom</h3>
-          </div>
-          <div class="member">
-            <h3>Jacob Lagerros</h3>
-          </div>
-          <div class="member">
-            <h3>Ben Pace</h3>
-          </div>
-          <div class="member">
-            <h3>Raymond Arnold</h3>
-          </div>
-          <div class="member">
-            <h3>Rafe Kennedy</h3>
-          </div>
-          <div class="member">
-            <h3>Robert Mushkatblat</h3>
-          </div>
-          <div class="member">
-            <h3>Ronny Fernandez</h3>
-          </div>
-        </div>
-      </section>
-
-      <hr>
-
       <!-- Jobs Section -->
-      <section id="jobs" class="work-with-us work-with-us--centered">
+      <section id="jobs" class="jobs-section">
         <h2>Work with Us</h2>
         <p>Lightcone is currently hiring for the following roles:</p>
-        <br/>
-        <div class="jobs jobs--stacked">
-          <a class="job" href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Senior_Designer">
-            <h3>Senior Designer</h3>
-            <button>Learn More</button>
-          </a>
-          <a class="job" href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Campus_Operations_Co_Lead">
-            <h3>Campus Operations Co-Lead</h3>
-            <button>Learn More</button>
-          </a>
-          <a class="job" href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Core_team_generalist">
-            <h3>Core-Team Generalist</h3>
-            <button>Learn More</button>
-          </a>
-        </div>
+        <ul class="jobs-list">
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Senior_Designer" class="linkstyle">Senior Designer</a></li>
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Campus_Operations_Co_Lead" class="linkstyle">Campus Operations Co-Lead</a></li>
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Core_team_generalist" class="linkstyle">Core-Team Generalist</a></li>
+        </ul>
       </section>
-
-      <hr>
 
       <!-- Donate Section -->
       <section id="donate" style="text-align: center; padding: 60px 20px;">
@@ -212,11 +167,9 @@
         </p>
       </section>
 
-      <hr>
-
-      <section>
+      <footer class="site-footer">
         Lightcone Infrastructure is a registered 501(c)3. EIN 92-0861538.
-      </section>
+      </footer>
     </div>
   </body>
 </html>
