@@ -6,23 +6,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/tlf2euo.css">
+    <link rel="stylesheet" href="https://edwardtufte.github.io/tufte-css/et-book/et-book.css">
     <link rel="shortcut icon" type="image/jpg" href="https://res.cloudinary.com/lesswrong-2-0/image/upload/a_90/v1629334277/Lightcone-02_stkgik.svg"/>
     <title>Lightcone Infrastructure</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      var APP_ID = "wtb8z7sj";
+      window.intercomSettings = {
+        app_id: APP_ID
+      };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
   </head>
   <body>
-    <div class="navbar">
-      <a href="index.html" class="logo">
-        <img class="logo-image" 
+    <header class="site-header">
+      <a href="#home" class="logo">
+        <img class="logo-image"
           src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1629334277/Lightcone-02_stkgik.svg"
         />
         <div>Lightcone Infrastructure</div>
       </a>
-      <a href="./jobs.html" class="CTA-button-navbar">
-        Work with us
-      </a>
-    </div>
+    </header>
     <div class="content-area">
-      <section class="banner-section">
+      <!-- About Section -->
+      <section id="home" class="banner-section">
         <div class="left-section">
           <h1>
             This century is critical for humanity. We build tech, infrastructure, and community to navigate it.
@@ -30,128 +41,184 @@
           <p>
             Humanity's future could be vast, spanning billions of flourishing galaxies, reaching far into our future light cone [1]. However, it seems humanity might never achieve this; we might not even survive the century. To increase our odds, we build services and infrastructure for people who are helping humanity navigate this crucial period.
           </p>
+          <p>
+            This is our mission and it in part determines what projects we work on. For concrete examples of our projects in infrastructure, tech, and community, see our <a href="#projects" class="linkstyle">projects section</a> below.
+          </p>
           <aside>
             [1]: Or even more than the light cone, depending on how the <a class="linkstyle" href="https://www.lesswrong.com/tag/acausal-trade">acausal trade stuff</a> works out.
           </aside>
-          <a href="./jobs.html" class="CTA-button-center">
-            Work with us
-          </a>
-          <a href="https://www.every.org/lightcone-infrastructure?donateTo=lightcone-infrastructure#/donate/" class="CTA-button-center">
-            Donate to us
-          </a>
         </div>
         <div class="right-section">
           <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1629337707/Space_Colonization_Architecture5_e8uuty.png"/>
         </div>
       </section>
-      <section class="projects">
-        <h2>
-          Projects
-        </h2>
-        <a href="https://www.lesswrong.com/about" class="project">
-          <h3>LessWrong</h3>
-          <p>Community forum dedicated to the Art of Rationality</p>
-        </a>
-        <a href="https://lighthaven.space" class="project">
-          <h3>Lighthaven</h3>
-          <p>Campus and event venue in Berkeley, CA</p>
-        </a>
-      </section>
-      <!-- <section class="work-with-us">
-        <h2>
-          Work with Us
-        </h2>
-        <div class="jobs">
-          <a class="job" href="lesswrong-software.html">
-            <h4>
-              <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100"><g><path d="M29.1,29.2l6.4,11.6l4.3-0.8l0.8-4.3L29.1,29.2z M40.7,64.5l-0.8-4.3l-4.3-0.8L29.2,71L40.7,64.5z M70.9,70.9l-6.4-11.6l-4.3,0.8l-0.8,4.3L70.9,70.9z M64.4,40.8l6.4-11.6l-11.6,6.4l0.8,4.3L64.4,40.8z M67.4,58.8l10.8,19.4L58.8,67.4L50,98.8l-8.8-31.4L21.9,78.2l10.8-19.4L1.2,50.1l31.4-8.8L21.9,21.9l19.4,10.8L50,1.3l8.8,31.4l19.4-10.8L67.4,41.3L98.8,50L67.4,58.8zM57.7,57.8L83.5,50L50,50.1l7.7-7.7L50,16.6v33.5l-7.7-7.7l-25.8,7.7H50l-7.7,7.7L50,83.5V50.1L57.7,57.8z"></path></g></svg>
-              LessWrong
-            </h4>
-            <h3>Software Engineer</h3>
-            <button>Learn More</button>
-          </a>
-          <a class="job" href="campus-generalist.html">
-            <h4>
-             <svg x="0px" y="0px" viewBox="0 0 158.1 201.2">
-                <style type="text/css">
-                    .st0{display:none;}
-                    .st1{fill-rule:evenodd;clip-rule:evenodd;}
-                    .st2{fill:none;}
-                </style>
-                <path class="st1" d="M79.1,100.6L131,8.5c-2.2,1-3.7,1.9-6.1,2.8L82.3,84.2l-3.3-29.7l-3.3,29.7L37.7,17.1c20.4,6,45.3,7,68,3.2
-                    L85.6,56.7l2.7,5.9l27.5-48.9c-24.6,6.1-56.8,5.2-79.4-2c21.7-9,57.2-8.2,81.3-2.1l2-4.4C91.5-2.9,54-1.3,27.1,8.5"/>
-                <polyline class="st1" points="158.1,100.6 86.2,97.8 103.9,82.8 82.4,94.8 79.1,100.6 "/>
-                <polyline class="st1" points="0,100.6 72,97.8 54.3,82.8 75.8,94.8 79.1,100.6 "/>
-                <path class="st1" d="M79.1,100.6l-51.9,92.1c2.2-1,3.7-1.9,6.1-2.8L75.8,117l3.3,29.7l3.3-29.7l38.1,67.1c-20.4-6-45.3-7-68-3.2
-                    l20.1-36.5l-2.7-5.9l-27.5,48.9c24.6-6.1,56.8-5.2,79.4,2c-21.7,9-57.2,8.2-81.3,2.1l-2,4.4c28.3,8.1,65.8,6.5,92.6-3.4"/>
-                <polyline class="st1" points="158.1,100.6 86.2,103.4 103.9,118.4 82.4,106.4 79.1,100.6 "/>
-                <polyline class="st1" points="0,100.6 72,103.4 54.3,118.4 75.8,106.4 79.1,100.6 "/>
-              </svg>
-  
-              Campus
-            </h4>
-            <h3>Generalist</h3>
-            <button>Learn More</button>
-          </a>
-          <a class="job" href="engineering-product-manager.html">
-            <h4>
-              <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100"><g><path d="M29.1,29.2l6.4,11.6l4.3-0.8l0.8-4.3L29.1,29.2z M40.7,64.5l-0.8-4.3l-4.3-0.8L29.2,71L40.7,64.5z M70.9,70.9l-6.4-11.6l-4.3,0.8l-0.8,4.3L70.9,70.9z M64.4,40.8l6.4-11.6l-11.6,6.4l0.8,4.3L64.4,40.8z M67.4,58.8l10.8,19.4L58.8,67.4L50,98.8l-8.8-31.4L21.9,78.2l10.8-19.4L1.2,50.1l31.4-8.8L21.9,21.9l19.4,10.8L50,1.3l8.8,31.4l19.4-10.8L67.4,41.3L98.8,50L67.4,58.8zM57.7,57.8L83.5,50L50,50.1l7.7-7.7L50,16.6v33.5l-7.7-7.7l-25.8,7.7H50l-7.7,7.7L50,83.5V50.1L57.7,57.8z"></path></g></svg>
-              LessWrong
-            </h4>
-            <h3>Engineering and Product Manager</h3>
-            <button>Learn More</button>
-          </a>
-        </div>
-      </section> -->
-      <section class="team">
-        <h2> Team </h2>
-        <div class="team-members">
-          <div class="member">
-            <h3>
-              Oliver Habryka
-            </h3>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <!-- LessWrong - Image Left, Text Right -->
+        <div class="project-row">
+          <div class="project-image project-image--fade">
+            <img src="images/lw-orbs.png" alt="LessWrong">
           </div>
-          <div class="member">
-            <h3>
-              Ruby Bloom
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Jacob Lagerros
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Ben Pace
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Raymond Arnold
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Rafe Kennedy
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Robert Mushkatblat
-            </h3>
-          </div>
-          <div class="member">
-            <h3>
-              Ronny Fernandez
-            </h3>
+          <div class="project-text">
+            <h3><a href="https://www.lesswrong.com/about">LessWrong</a></h3>
+            <p>
+              Over 4 million people visit and read <a href="https://www.lesswrong.com/about" class="linkstyle">LessWrong.com</a> every year, publishing research on aligning and controlling modern AI systems, understanding the long-term trajectory of human civilization, and developing tools, concepts and methodologies for studying these tricky domains better. Writing published here has shaped national policy, modern media culture, and the trajectory of modern AI labs.
+            </p>
+            <p>
+              We develop the software that runs LessWrong, are actively participating in research discussions, are responsible for moderating the content, and generally steer the site in a direction that will maintain its principles and grow its influence over the world. Our work here has, in our opinion, created by far the best public discussions, and best learning environment for engaging with the long-term trajectory of human civilization, and how to best steer it.
+            </p>
           </div>
         </div>
+
+        <!-- Lighthaven - Text Left, Image Right -->
+        <div class="project-row project-row--reverse">
+          <div class="project-image project-image--fade">
+            <img src="https://res.cloudinary.com/lesswrong-2-0/image/upload/v1744861859/Lighthaven_New_pbyotj.png" alt="Lighthaven Campus">
+          </div>
+          <div class="project-text">
+            <h3><a href="https://lighthaven.space">Lighthaven</a></h3>
+            <p>
+              Lighthaven is a space dedicated to hosting events and programs that help people think better and improve humanity's long-term trajectory. It was designed from the ground up by people who run events for people who run events with this mission statement as a guiding principle. This is why it is dominated by cozy nooks and whiteboards and late night fire pits, rather than lecture halls and meeting rooms and mind numbing office ceiling tiles.
+            </p>
+            <p>
+              Since 2023, we've hosted some of the most important gatherings at the intersection of AI, science, and intellectual culture — from David Chalmers exploring AI consciousness at <a href="https://eleosai.org/conference/" class="linkstyle">Eleos ConCon</a>, to talented high schoolers learning applied rationality at <a href="https://www.sparc.camp" class="linkstyle">SPARC</a>, to progress studies pioneers at the <a href="https://rootsofprogress.org/conference/" class="linkstyle">Progress Conference</a>. We've hosted multi-week programs like the <a href="https://www.matsprogram.org" class="linkstyle">MATS</a> AI safety fellowship and <a href="https://www.vitalistbay.com" class="linkstyle">Vitalist Bay's</a> 8 weeks of longevity science, as well as intimate offsites and individual residencies.
+            </p>
+          </div>
+        </div>
+
+        <!-- AI 2027, MIRI Book Launch, and other design contracting - Image Left, Text Right -->
+        <div class="project-row">
+          <div class="project-image project-image--fade">
+            <img src="images/ai2027-new.png" alt="AI 2027 visualization">
+          </div>
+          <div class="project-text">
+            <h3>External Design and Communication Work</h3>
+            <p>
+              In 2024 we began providing website design, branding, and marketing for high-stakes public research communication. Our work on AI 2027 helped the piece reach 9M+ direct views and an estimated 100M through secondary coverage. It was read by the US vice president and covered in hundreds of news stories across a dozen languages. We built the website and marketing materials for MIRI's If Anyone Builds It, Everyone Dies, which became a NYT bestseller. We built the Deciding to Win site in one week (including three all-nighters), and the report was covered by essentially every major US publication.
+            </p>
+            <p>
+              This work matters because presentation dramatically affects reach. We seem to be unusually well-positioned to do it, combining design skill, technical ability, and understanding of the ideas. Multiple teams have approached us since AI 2027 asking for similar help. We're excited to continue offering this to projects that aim to help the public reason well about critical decision points for humanity's future.
+            </p>
+          </div>
+        </div>
+
+        <!-- Internal Events - Text Left, Image Right -->
+        <div class="project-row project-row--reverse">
+          <div class="project-image project-image--grid">
+            <img src="images/thinking1.jpg" alt="Thinking 1">
+            <img src="images/thinking2.webp" alt="Thinking 2">
+            <img src="images/thinking3.jpg" alt="Thinking 3">
+            <img src="images/thinking4.webp" alt="Thinking 4">
+          </div>
+          <div class="project-text">
+            <h3>Internal Events</h3>
+            <p>
+              Intellectual progress clusters around scenes: the Vienna Circle, the Royal Society, Bell Labs. Lightcone is positioned to support such scenes; we run both an online forum (LessWrong) and a physical venue (Lighthaven).
+            </p>
+            <p>
+              Our flagship events:
+            </p>
+            <p>
+              <strong><a href="https://less.online" class="linkstyle">LessOnline</a>:</strong> A 600+ attendee weekend conference featuring Eliezer Yudkowsky, Scott Alexander, Zvi Mowshowitz, Dwarkesh Patel, Scott Sumner, and David Friedman.
+            </p>
+            <p>
+              <strong><a href="https://inkhaven.blog" class="linkstyle">Inkhaven</a>:</strong> A 30-day writing residency where participants publish daily or leave. In November 2025, all attendees completed the residency. Their posts averaged 50 Karma vs. 28 for other posts, 80% higher.
+            </p>
+            <p>
+              We started experimenting with internal events in 2023. Early results are strong, and we plan to expand this part of our operation.
+            </p>
+          </div>
+        </div>
+
+        <p class="projects-footer">
+          For a deeper look at our work and its impact, see our <a href="https://www.lesswrong.com/posts/5n2ZQcbc7r4R8mvqc/the-lightcone-is-nothing-without-its-people" class="linkstyle">2024</a> and <a href="https://www.lesswrong.com/posts/eKGdCNdKjvTBG9i6y/toss-a-bitcoin-to-your-lightcone-lw-lighthaven-s-2026" class="linkstyle">2025</a> fundraising documents.
+        </p>
+
       </section>
-      <hr></hr>
-      <section>
+
+      <!-- Principles Section -->
+      <section id="principles" class="principles-section principles-section--left">
+        <h2>Operational Principles</h2>
+        <p>
+          Lightcone is a culturally thick organization. It has a particular culture and a particular way of doing things. As a first, lossy approximation, you can imagine something that mixes the intensity of bay area start up culture with the epistemic norms and aspirational virtues of LessWrong style rationality.
+        </p>
+        <p>
+          Every sunday, our CEO writes a mini-essay about one of Lightcone's operating principles. He recently edited and canonized these essays into a sequence on LessWrong which you can read to get a less lossy sense of what our work culture is like. It is still a work in progress.
+        </p>
+        <p style="text-align: center;">
+          <a href="https://www.lesswrong.com/s/cegJvyiP2dBkhDh2K" class="linkstyle">Read the Lightcone Principles here</a>
+        </p>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="team-section">
+        <h2>Team</h2>
+        <ul class="team-list">
+          <li>Oliver Habryka</li>
+          <li>Ben Pace</li>
+          <li>Jacob Lagerros</li>
+          <li>Rafe Kennedy</li>
+          <li>Raymond Arnold</li>
+          <li>Robert Mushkatblat</li>
+          <li>Ronny Fernandez</li>
+          <li>Ruby Bloom</li>
+        </ul>
+      </section>
+
+      <!-- Board Section -->
+      <section id="board" class="team-section">
+        <h2>Board</h2>
+        <ul class="team-list">
+          <li>Oliver Habryka</li>
+          <li>Daniel Kokotajlo</li>
+          <li>Matthew Gray</li>
+        </ul>
+      </section>
+
+      <!-- Jobs Section -->
+      <section id="jobs" class="jobs-section">
+        <h2>Work with Us</h2>
+        <p>Lightcone is currently hiring for the following roles:</p>
+        <ul class="jobs-list">
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Senior_Designer" class="linkstyle">Senior Designer</a></li>
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Campus_Operations_Co_Lead" class="linkstyle">Campus Operations Co-Lead</a></li>
+          <li><a href="https://www.lesswrong.com/posts/Wowc8jfvyrsp4a6uk/lightcone-is-hiring-a-generalist-a-designer-and-a-campus#Core_team_generalist" class="linkstyle">Core-Team Generalist</a></li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          You can contact us on intercom.
+        </p>
+        <p style="text-align: center;">
+          <a href="#" onclick="window.Intercom('showNewMessage'); return false;" class="linkstyle">Chat with us</a>
+        </p>
+      </section>
+
+      <!-- Donate Section -->
+      <section id="donate" style="text-align: center; padding: 60px 20px;">
+        <h2>Donate</h2>
+        <p style="margin-top: 20px;">
+          Your support enables us to build and maintain the infrastructure humanity needs to navigate this critical century.
+        </p>
+        <p>
+          If you are considering donating $1,000 or more and have questions, please let us know in an intercom message and we will make sure that Oliver gets back to you.
+        </p>
+        <p style="margin-top: 30px;">
+          <a href="https://www.every.org/lightcone-infrastructure?suggestedAmounts=50%2C100%2C1000%2C2000%2C10000&theme_color=7faf83&designation=Lightcone+Infrastructure&utm_campaign=donate-link#/donate" class="linkstyle">
+            Donate via Every.org
+          </a>
+        </p>
+      </section>
+
+      <footer class="site-footer">
         Lightcone Infrastructure is a registered 501(c)3. EIN 92-0861538.
-      </section>
+      </footer>
     </div>
   </body>
 </html>

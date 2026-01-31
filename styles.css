@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    opacity: 50%;
+    opacity: 0.7;
 }
 
 .linkstyle {
@@ -39,15 +39,11 @@ p a {
     color: #ebba57
 }
 
-.navbar {
+/* Site header - centered logo */
+.site-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    /* flex-wrap: wrap; */
+    justify-content: center;
+    padding: 40px 0 60px;
 }
 .logo {
     display:flex;
@@ -93,12 +89,10 @@ p a {
     display: flex;
     row-gap: 12px;
     column-gap: 50px;
-    /* flex-flow: row wrap; */
     align-items: center;
     flex-wrap: wrap-reverse;
-    /* align-content: center; */
-    /* justify-items: center; */
     justify-content: center;
+    min-height: calc(100vh - 160px);
 }
 .left-section {
     /* width: 60%; */
@@ -160,30 +154,84 @@ h3 {
     display: block;
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s ease;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.projects--centered {
+    text-align: center;
+}
+
+.projects--centered .project-card {
+    text-align: left;
+}
+
+.project-card:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.project-card svg {
+    width: 100%;
+    height: 150px;
+    padding: 24px;
+    box-sizing: border-box;
+    fill: #ebba57;
+    background: #faf8f5;
+}
+
+.project-card-content {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+
 .content-area {
     display: flex;
     flex-direction: column;
     /* gap: 60px; */
 }
 
-.job {
-    display: flex;
-    padding: 16px;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    /* max-width: 300px; */
-    min-width: 300px;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+/* Jobs section */
+.jobs-section {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.jobs {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+.jobs-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.jobs-list li {
+  font-size: 21px;
+  margin-bottom: 12px;
 }
 
 h4 {
@@ -224,20 +272,204 @@ h4 {
     margin-top: 50px;
 }
 
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+/* Team section */
+.team-section {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.member {
-    /* width: 250px; */
-    max-width: 320px;
-    min-width: 250px;
-    flex: 1;
-    display: block;
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.footer {
-    position: absolute;
-    padding: 16px 0;
-    bottom: 0;
+
+.team-list li {
+  font-size: 21px;
+  color: #666;
+  margin-bottom: 8px;
+}
+/* Site footer */
+.site-footer {
+    text-align: center;
+    padding: 60px 20px 40px;
+    font-size: 16px;
+    color: #888;
+}
+
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.breadcrumbs a {
+  color: #ebba57;
+}
+
+.breadcrumb-sep {
+  margin: 0 0.6em;
+  opacity: 0.4;
+}
+
+
+/* Single-page section spacing */
+.content-area section {
+  scroll-margin-top: 20px;
+  padding-top: 40px;
+  margin-top: 60px;
+}
+
+.content-area section:first-child {
+  margin-top: 0;
+}
+
+.principles-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.principles-section--left {
+  text-align: left;
+}
+
+.principles-section--left h2 {
+  text-align: center;
+}
+
+/* Contact section */
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-section--left {
+  text-align: left;
+}
+
+.contact-section--left h2 {
+  text-align: center;
+}
+
+/* Zig-zag project layout */
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projects-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.project-row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.project-row--reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-image--fade img {
+  border-radius: 0;
+  mask-image:
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  mask-composite: intersect;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-composite: source-in;
+}
+
+.project-image--placeholder {
+  background: #f5f5f5;
+  min-height: 250px;
+  border-radius: 8px;
+}
+
+.project-image--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 35%;
+}
+
+.project-image--grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-image--grid img:first-child {
+  object-position: left center;
+}
+
+.project-row .project-text {
+  flex: 1;
+}
+
+.project-row .project-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.project-row .project-text p {
+  margin-bottom: 16px;
+  color: #666;
+  font-family: "et-book", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.project-row .project-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-row .project-text .footnote {
+  font-size: 14px;
+  color: #888;
+  margin-top: 12px;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 750px) {
+  .project-row,
+  .project-row--reverse {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-image--grid {
+    width: 80%;
+  }
 }
