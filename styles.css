@@ -31,6 +31,17 @@ li {
     margin-bottom: 0.3em;
 }
 
+.job-posting blockquote {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.job-posting blockquote p {
+    font-size: 18px;
+}
+
 aside {
     font-size: 16px;
 }
@@ -184,6 +195,15 @@ h3 {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.jobs-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 300px;
+    flex: 1;
 }
 
 h4 {
@@ -218,6 +238,23 @@ h4 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.job-posting a {
+    color: #ebba57;
+}
+
+.job-posting .linkpost-note {
+    color: #999999;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 16px;
+    margin-bottom: 2.5em;
+}
+
+.job-posting .linkpost-note a {
+    color: #ebba57;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .job-posting h1 {
