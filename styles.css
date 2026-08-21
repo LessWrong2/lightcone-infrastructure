@@ -400,6 +400,12 @@ h4 {
     margin-top: 60px;
 }
 
+@media (max-width: 650px) {
+    .banner-section + .projects h2 {
+        margin-top: 70px;
+    }
+}
+
 .more-info {
     font-size: 17px;
     font-style: italic;
