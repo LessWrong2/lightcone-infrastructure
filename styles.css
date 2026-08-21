@@ -294,26 +294,12 @@ h4 {
     min-width: 250px;
     flex: 1;
     display: block;
-    padding: 0 40px;
 }
 
 .member h3 {
     font-weight: normal;
 }
 
-.team-members .member:nth-child(3n+1) {
-    text-align: left;
-}
-
-.team-members .member:nth-child(3n+2) {
-    text-align: center;
-    justify-self: center;
-}
-
-.team-members .member:nth-child(3n) {
-    text-align: right;
-    justify-self: end;
-}
 .footer {
     position: absolute;
     padding: 16px 0;
