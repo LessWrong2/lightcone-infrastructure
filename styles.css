@@ -154,6 +154,7 @@ h1 {
     flex: 2;
     min-width: 300px;
     max-width: 400px;
+    padding-top: 25px;
 }
 
 h2 {
