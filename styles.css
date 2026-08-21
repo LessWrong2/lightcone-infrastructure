@@ -294,6 +294,7 @@ h4 {
     min-width: 250px;
     flex: 1;
     display: block;
+    padding: 0 40px;
 }
 
 .member h3 {
