@@ -112,6 +112,7 @@ p a {
     margin-top: 16px;
     margin-right: 8px;
     color: #ebba57;
+    font-variant: small-caps;
     transition: opacity 0.15s ease;
 }
 
