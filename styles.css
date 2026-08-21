@@ -390,6 +390,7 @@ h4 {
 }
 
 .cta-star {
+    display: inline-block;
     width: 13px;
     vertical-align: middle;
     margin: 0 12px;
