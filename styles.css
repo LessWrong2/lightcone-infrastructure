@@ -46,6 +46,10 @@ aside {
     font-size: 16px;
 }
 
+.banner-section sup {
+    color: #ebba57;
+}
+
 p a {
     color: #ebba57
 }
