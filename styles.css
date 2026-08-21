@@ -393,7 +393,7 @@ h4 {
     display: inline-block;
     width: 5px;
     vertical-align: middle;
-    margin: 0 12px;
+    margin: 0 12px 0 4px;
     opacity: 45%;
 }
 
