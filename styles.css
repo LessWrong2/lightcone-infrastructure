@@ -109,20 +109,10 @@ p a {
 
 .CTA-button-center {
     display: inline-block;
-    background: hsl(33deg 100% 38%);
-    border: 0px solid;
-    opacity: 50%;
-    /* font-style: italic; */
-    padding: 12px 16px;
-    border-radius: 24px;
     margin-top: 16px;
-    color: white;
     margin-right: 8px;
+    color: #ebba57;
     transition: opacity 0.15s ease;
-}
-
-.CTA-button-center:hover {
-    opacity: 80%;
 }
 
 .banner-section {
