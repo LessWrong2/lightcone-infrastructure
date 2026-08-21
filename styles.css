@@ -314,6 +314,14 @@ h4 {
     justify-self: end;
 }
 
+@media (min-width: 660px) {
+    .team-members .member.center-member {
+        grid-column: 2;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
 .footer {
     position: absolute;
     padding: 16px 0;
