@@ -389,6 +389,13 @@ h4 {
     text-align: center;
 }
 
+.cta-star {
+    width: 13px;
+    vertical-align: middle;
+    margin: 0 12px;
+    opacity: 45%;
+}
+
 .projects h2 {
     margin-top: 30px;
 }
