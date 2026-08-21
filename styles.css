@@ -79,6 +79,11 @@ p a {
     font-style: italic;
     display: inline-block;
     flex-shrink: 0;
+    transition: opacity 0.15s ease;
+}
+
+.CTA-button-navbar:hover {
+    opacity: 80%;
 }
 
 .navbar-links {
@@ -109,6 +114,11 @@ p a {
     margin-top: 16px;
     color: white;
     margin-right: 8px;
+    transition: opacity 0.15s ease;
+}
+
+.CTA-button-center:hover {
+    opacity: 80%;
 }
 
 .banner-section {
@@ -335,4 +345,5 @@ h4 {
     padding: 80px 0 12px;
     text-align: center;
     font-size: 16px;
+    color: #999999;
 }
