@@ -1,7 +1,7 @@
 body {
     font-family: verdigris-mvb-pro-text, serif;
     max-width: 1100px;
-    padding: 30px 30px 80px;
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
     color: #666666;
@@ -81,10 +81,21 @@ p a {
     flex-shrink: 0;
 }
 
-@media (max-width: 650px) { 
-    .CTA-button-navbar {
-        display: none;     
-    }   
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.navbar-divider {
+    opacity: 50%;
+}
+
+@media (max-width: 650px) {
+    .navbar-links {
+        display: none;
+    }
 }
 
 .CTA-button-center {
@@ -279,13 +290,20 @@ h4 {
     bottom: 0;
 }
 
+.smallcaps {
+    font-variant: small-caps;
+}
+
+.bottom-cta {
+    padding-top: 40px;
+}
+
+.projects h2 {
+    margin-top: 30px;
+}
+
 .pinned-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 30px;
-    background-color: white;
+    padding: 80px 0 12px;
     text-align: left;
     font-size: 16px;
 }
