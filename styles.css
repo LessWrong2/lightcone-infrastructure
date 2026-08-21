@@ -323,6 +323,13 @@ h4 {
     }
 }
 
+@media (max-width: 659px) {
+    .team-members .member:nth-child(n) {
+        text-align: center;
+        justify-self: center;
+    }
+}
+
 .footer {
     position: absolute;
     padding: 16px 0;
