@@ -180,6 +180,7 @@ h3 {
 .project {
     margin-bottom: 32px;
     display: block;
+    width: fit-content;
 }
 
 .content-area {
@@ -284,18 +285,46 @@ h4 {
     flex: 1;
     display: block;
 }
+
+.member h3 {
+    font-weight: normal;
+}
+
+.team-members .member:nth-child(3n+1) {
+    text-align: left;
+}
+
+.team-members .member:nth-child(3n+2) {
+    text-align: center;
+    justify-self: center;
+}
+
+.team-members .member:nth-child(3n) {
+    text-align: right;
+    justify-self: end;
+}
 .footer {
     position: absolute;
     padding: 16px 0;
     bottom: 0;
 }
 
+.generalist-team {
+    padding-top: 40px;
+}
+
+.lighthaven-team {
+    padding-top: 40px;
+}
+
 .smallcaps {
     font-variant: small-caps;
+    font-weight: normal;
 }
 
 .bottom-cta {
-    padding-top: 40px;
+    padding-top: 80px;
+    text-align: center;
 }
 
 .projects h2 {
@@ -304,6 +333,6 @@ h4 {
 
 .pinned-footer {
     padding: 80px 0 12px;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
 }
