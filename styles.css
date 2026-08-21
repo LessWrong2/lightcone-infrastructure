@@ -306,6 +306,14 @@ h4 {
     bottom: 0;
 }
 
+.section-divider {
+    display: block;
+    width: 340px;
+    max-width: 80%;
+    margin: 60px auto 0;
+    opacity: 45%;
+}
+
 .generalist-team {
     padding-top: 40px;
 }
