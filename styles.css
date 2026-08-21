@@ -328,6 +328,11 @@ h4 {
         text-align: center;
         justify-self: center;
     }
+
+    .team-heading,
+    .team-subheading {
+        text-align: center;
+    }
 }
 
 .footer {
