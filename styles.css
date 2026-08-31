@@ -194,6 +194,15 @@ h3 {
     opacity: 100%;
 }
 
+.project p a {
+    color: #666666;
+}
+
+.project p a:hover {
+    color: #ebba57;
+    opacity: 100%;
+}
+
 .content-area {
     display: flex;
     flex-direction: column;
