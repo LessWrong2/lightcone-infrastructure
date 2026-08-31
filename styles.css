@@ -1,7 +1,7 @@
 body {
     font-family: verdigris-mvb-pro-text, serif;
     max-width: 1100px;
-    padding: 30px 30px 80px;
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
     color: #666666;
@@ -46,6 +46,10 @@ aside {
     font-size: 16px;
 }
 
+.banner-section sup {
+    color: #ebba57;
+}
+
 p a {
     color: #ebba57
 }
@@ -79,25 +83,37 @@ p a {
     font-style: italic;
     display: inline-block;
     flex-shrink: 0;
+    transition: opacity 0.15s ease;
 }
 
-@media (max-width: 650px) { 
-    .CTA-button-navbar {
-        display: none;     
-    }   
+.CTA-button-navbar:hover {
+    opacity: 80%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.navbar-divider {
+    opacity: 50%;
+}
+
+@media (max-width: 650px) {
+    .navbar-links {
+        display: none;
+    }
 }
 
 .CTA-button-center {
     display: inline-block;
-    background: hsl(33deg 100% 38%);
-    border: 0px solid;
-    opacity: 50%;
-    /* font-style: italic; */
-    padding: 12px 16px;
-    border-radius: 6px;
     margin-top: 16px;
-    color: white;
     margin-right: 8px;
+    color: #ebba57;
+    font-variant: small-caps;
+    transition: opacity 0.15s ease;
 }
 
 .banner-section {
@@ -133,6 +149,7 @@ h1 {
     flex: 2;
     min-width: 300px;
     max-width: 400px;
+    padding-top: 25px;
 }
 
 h2 {
@@ -169,6 +186,21 @@ h3 {
 .project {
     margin-bottom: 32px;
     display: block;
+    width: fit-content;
+}
+
+.project h3 a:hover {
+    color: #ebba57;
+    opacity: 100%;
+}
+
+.project p a {
+    color: #666666;
+}
+
+.project p a:hover {
+    color: #ebba57;
+    opacity: 100%;
 }
 
 .content-area {
@@ -273,19 +305,129 @@ h4 {
     flex: 1;
     display: block;
 }
+
+.member h3 {
+    font-weight: normal;
+}
+
+.team-members .member:nth-child(3n+1) {
+    text-align: left;
+}
+
+.team-members .member:nth-child(3n+2) {
+    text-align: center;
+    justify-self: center;
+}
+
+.team-members .member:nth-child(3n) {
+    text-align: right;
+    justify-self: end;
+}
+
+@media (max-width: 659px) {
+    .team-members .member:nth-child(n) {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .team-heading,
+    .team-subheading {
+        text-align: center;
+    }
+}
+
 .footer {
     position: absolute;
     padding: 16px 0;
     bottom: 0;
 }
 
+.section-divider {
+    display: block;
+    width: 160px;
+    max-width: 80%;
+    margin: 60px auto 0;
+    opacity: 45%;
+}
+
+.cta-divider {
+    width: 140px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.team-divider {
+    margin-bottom: 30px;
+}
+
+.team-heading {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team-subheading {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgb(80 80 80 / 80%);
+    margin-bottom: 20px;
+}
+
+.generalist-team {
+    padding-top: 20px;
+}
+
+.specialist-team {
+    padding-top: 40px;
+}
+
+.lighthaven-team {
+    padding-top: 70px;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+    font-weight: normal;
+}
+
+.bottom-cta {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.cta-star {
+    display: inline-block;
+    width: 5px;
+    vertical-align: middle;
+    margin: 0 12px 0 4px;
+    opacity: 45%;
+}
+
+.projects h2 {
+    margin-top: 30px;
+}
+
+.projects + .projects h2 {
+    margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+    .banner-section + .projects h2 {
+        margin-top: 70px;
+    }
+}
+
+.more-info {
+    font-size: 17px;
+    font-style: italic;
+}
+
 .pinned-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 30px;
-    background-color: white;
-    text-align: left;
+    padding: 20px 0 12px;
+    text-align: center;
     font-size: 16px;
+    color: #999999;
 }
