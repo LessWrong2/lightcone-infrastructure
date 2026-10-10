@@ -1,12 +1,11 @@
 :root {
-    --paper: #fbfaf6;
+    --paper: #f9f6ef;
     --ink: #2a2824;
     --text: #57534b;
-    --muted: #8e897e;
-    --faint: #b9b3a7;
-    --rule: #e6e1d5;
+    --muted: #746f66;
+    --rule: #e5dfd2;
     --gold: #d9a441;
-    --gold-ink: #94681a;
+    --gold-ink: #8a5f12;
     --cone-fill: #e3ae4a;
     --serif: verdigris-mvb-pro-text, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     --measure: 1080px;
@@ -19,8 +18,7 @@
         --paper: #0f1013;
         --ink: #ece6d9;
         --text: #bdb6a8;
-        --muted: #8a8478;
-        --faint: #5b574f;
+        --muted: #9a9486;
         --rule: #26262a;
         --gold: #e2b357;
         --gold-ink: #e2b357;
@@ -120,6 +118,7 @@ a {
 }
 
 .nav a {
+    white-space: nowrap;
     transition: color 0.15s ease;
 }
 
@@ -142,8 +141,10 @@ a {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
     .masthead {
+        flex-wrap: wrap;
+        row-gap: 10px;
         padding-top: 24px;
         padding-bottom: 20px;
     }
@@ -156,8 +157,9 @@ a {
         width: 20px;
     }
     .nav {
-        gap: 16px;
+        gap: 20px;
         font-size: 16px;
+        padding-left: 32px;
     }
 }
 
@@ -210,7 +212,7 @@ a {
 }
 
 .footnote a,
-.prose a {
+.prose a:not([class]) {
     color: var(--ink);
     text-decoration: underline;
     text-decoration-color: var(--gold);
@@ -220,7 +222,7 @@ a {
 }
 
 .footnote a:hover,
-.prose a:hover {
+.prose a:not([class]):hover {
     color: var(--gold-ink);
 }
 
@@ -334,7 +336,7 @@ a {
     font-size: 17px;
     font-weight: 400;
     font-style: italic;
-    color: var(--muted);
+    color: var(--text);
     padding-top: 3px;
 }
 
@@ -343,7 +345,7 @@ a {
     margin-top: 6px;
     font-size: 15px;
     line-height: 1.45;
-    color: var(--faint);
+    color: var(--muted);
     max-width: 13em;
 }
 
@@ -382,7 +384,7 @@ a {
     font-size: 13px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--faint);
+    color: var(--muted);
     white-space: nowrap;
     transition: color 0.15s ease;
 }
@@ -535,14 +537,15 @@ a {
 .closing .ornament {
     display: block;
     width: 120px;
+    height: auto;
     margin: 0 auto 36px;
-    opacity: 0.4;
+    opacity: 0.38;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .closing .ornament {
         filter: invert(1);
-        opacity: 0.35;
+        opacity: 0.4;
     }
 }
 
@@ -673,7 +676,7 @@ a {
     font-size: 13px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--faint);
+    color: var(--muted);
     transition: color 0.15s ease;
 }
 
@@ -696,6 +699,13 @@ a {
     max-width: 700px;
     margin: 0 auto;
     padding-top: 24px;
+}
+
+.page-head .label,
+.posting .label {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
 }
 
 .posting .back {
